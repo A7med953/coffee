@@ -1,0 +1,24 @@
+
+  <div class="flex-shrink-0 p-3 bg-white" style="width: 280px;">
+    <a href="/" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+      <svg class="bi me-2" width="30" height="24"></svg>
+      <span class="fs-5 fw-semibold color">Categories</span>
+    </a>
+    <ul class="list-unstyled ps-0">
+  
+        <li class="mb-1" *ngFor="let category of categories">
+            <button class="btn btn-toggle align-items-center rounded collapsed" (click)="selectCategory(category)">
+              {{ category }}
+            </button>
+          </li>
+      
+
+      <li class="border-top my-3"></li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+            Sievers
+        </button>
+      </li>
+    </ul>
+  </div>
+  

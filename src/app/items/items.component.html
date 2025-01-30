@@ -1,0 +1,17 @@
+
+  <div class="row no-gutters "> 
+    <div class="col-4  justify-content-center" *ngFor="let item of filteredItems">
+      <div class="card m-0" style="max-width: 18rem; border: none;">
+        <img [src]="item.imageUrl" class="card-img-top rounded-circle mx-auto d-block mt-3" alt="{{ item.name }}" style="width: 150px; height: 150px;"> 
+        <div class="card-body text-center">
+          <h5 class="card-title">{{ item.name }}</h5>
+          <p class="card-text">{{ item.description }}</p>
+          <span class="card-text text-success">{{ item.price | currency }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
